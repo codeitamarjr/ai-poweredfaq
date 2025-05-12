@@ -24,15 +24,13 @@ class ChatbotTest extends TestCase
         Auth::login(User::factory()->create());
     }
 
-    /** @test */
-    public function it_renders_the_chatbot_component()
+    public function test_it_renders_the_chatbot_component()
     {
         Livewire::test('chatbot')
             ->assertSee('Type your question...');
     }
 
-    /** @test */
-    public function it_can_send_a_message()
+    public function test_it_can_send_a_message()
     {
         $fakeResponse = TextResponseFake::make()
             ->withText('Hello')
@@ -56,8 +54,7 @@ class ChatbotTest extends TestCase
         ]);
     }
 
-    /** @test */
-    public function it_displays_a_response_from_the_bot_with_history()
+    public function test_it_displays_a_response_from_the_bot_with_history(): void
     {
         ChatInteraction::create([
             'question' => 'Foo?',
