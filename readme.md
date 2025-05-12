@@ -2,10 +2,8 @@
 
 A modern FAQ application built with Laravel, Livewire, Alpine.js, Tailwind CSS, and PrismPHP. Users can submit questions and receive AI-generated responses, which are stored for future reference.
 
-<p align="center">
 [![tests](https://github.com/codeitamarjr/ai-poweredfaq/actions/workflows/tests.yml/badge.svg)](https://github.com/codeitamarjr/ai-poweredfaq/actions/workflows/tests.yml)
 [![linter](https://github.com/codeitamarjr/ai-poweredfaq/actions/workflows/lint.yml/badge.svg)](https://github.com/codeitamarjr/ai-poweredfaq/actions/workflows/lint.yml)
-</p>
 
 ## Features
 
